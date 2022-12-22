@@ -23,53 +23,30 @@ interface MainSection{
 }
 
 interface Services{
-  ourservices:string,
-  find:string,
-  rightoffer:string,
-  foryou:string,
+button: string;
+description: string;
+tag: string;
+img: string;
+  // ourservices:string,
+  // find:string,
+  // rightoffer:string,
+  // foryou:string,
 }
-interface Application{
-  applicationtag:string,
-  applicationdescription:string,
-  learnmore:string,
-  appimg:string,
+
+interface Ourservices{
+ 
+  tag:string,
+  description:string,
+  button:string,
+  img:string,
   
 }
 
-interface SoftwareProduct{
-  softwaretag:string,
-  softwaredescription:string,
-  learnmore:string,
-  softimg:string,
-}
-
-interface Agile{
-  agiletag:string,
-  agiledescription:string,
-  learnmore:string,
-  agileimg:string
-}
-
-interface Digitalstratargy{
-  digitaltag:string,
-  digitaldescription:string,
-  learnmore:string,
-  digitalimg:string
-}
-
-interface Softwareoutsourcing{
-  outsourcingtag:string,
-  outsourcingdescription:string,
-  learnmore:string,
-  outsourceimg:string
-
-}
-
-interface Contactus{
-  chooseustag:string,
-  contactbtn:string
-  dropline:string
-}
+// interface Contactus{
+//   chooseustag:string,
+//   contactbtn:string
+//   dropline:string
+// }
 
 interface Experience{
   experiencetag:string,
@@ -295,53 +272,56 @@ export class AppComponent {
     getquote:"Get Quote",
   }
 
-  service:Services = {
-    ourservices: 'Our Services',
-    find: 'Find the',
-    rightoffer: 'right offers',
-    foryou: 'for you.'
-  }
+  services:Services[] = [
+    // ourservices: 'Our Services',
+    // find: 'Find the',
+    // rightoffer: 'right offers',
+    // foryou: 'for you.',
+    {
+    button: 'Learn More',
+    description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+    tag: 'Application Management and Modernisation',
+    img:'../assets/../assets/images/mobile.png',
+    },
 
-  application:Application = {
-    applicationtag: 'Application Management and Modernisation',
-    applicationdescription: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-    learnmore: 'Learn More',
-    appimg: '../assets/../assets/images/mobile.png'
-  }
 
-  softwareproduct:SoftwareProduct = {
-    softwaretag: 'Software Product Engineering',
-    softwaredescription: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-    learnmore: 'Learn More',
-    softimg: '../assets/../assets/images/web-design-icon.webp'
-  }
+   {
+    img: '../assets/../assets/images/web-design-icon.webp',
+    tag: 'Software Product Engineering',
+    description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
+    button: 'Learn More',
+   
+  },
 
-  agile:Agile = {
-    agiletag: 'Agile QA, Automation, and DevOps',
-    agiledescription: 'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-    learnmore: 'Learn More',
-    agileimg: '../assets/../assets/images/testing-icon.webp'
-  }
+ {
+    img: '../assets/../assets/images/testing-icon.webp',
+    tag: 'Agile QA, Automation, and DevOps',
+    description: 'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
+    button: 'Learn More',
+    
+  },
 
-  digitalstratargy:Digitalstratargy = {
-    digitaltag: 'Digital Strategy & Design',
-    digitaldescription: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-    learnmore: 'Learn More',
-    digitalimg: '../assets/../assets/images/uiux-design-icon.webp'
-  }
+ {
+    img: '../assets/../assets/images/uiux-design-icon.webp',
+    tag: 'Digital Strategy & Design',
+    description: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
+    button: 'Learn More',
+    
+  },
 
-  softwareoutsourcing:Softwareoutsourcing = {
-    outsourcingtag: 'Software outsourcing company',
-    outsourcingdescription: 'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-    learnmore: 'Learn More',
-    outsourceimg: '../assets/../assets/images/software-development-1.png'
-  }
-
-  contactus:Contactus = {
-    chooseustag: 'Dont know what to choose? ',
-    dropline:"Drop us a line.",
-    contactbtn: 'button'
-  }
+  {
+    img: '../assets/../assets/images/software-development-1.png',
+    tag: 'Software outsourcing company',
+    description: 'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
+    button: 'Learn More',
+   
+  },
+ ];
+  // contactus:Contactus = {
+  //   chooseustag: 'Dont know what to choose? ',
+  //   dropline:"Drop us a line.",
+  //   contactbtn: 'button'
+  // }
 
   experience:Experience = {
     experiencetag: 'We have the experience',

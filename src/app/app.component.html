@@ -52,70 +52,34 @@
 
     <!-- ___________________________________________________________ -->
 
-
-    <div class="services">
+  <!----
         <h1>{{service.ourservices}}</h1>
         <span class="headerline"></span>
 
-        <div class="boxes">
+        <div class="boxes" >
             <div class="divcontent divcontent1" style="border: none;">
                 <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{service.find}}<br> <span
                         style="font-weight: bolder; font-size: 60px;">{{service.rightoffer}}</span> <br> {{service.foryou}}</h1>
-            </div>
+            </div> -->
+    <div class="services">
 
-            <div class="divcontent divcontent2">
+        <div class="boxes">
+            <div class="divcontent divcontent2" *ngFor="let service of services">
+                
                 <div class="flex">
-                    <img src={{application.appimg}}>
-                    <h2>{{application.applicationtag}}</h2>
+                    <img src={{service.img}}>
+                    <h2>{{service.tag}}</h2>
                 </div>
-                <p>{{application.applicationdescription}}</p>
-                <a href="#">{{application.learnmore}}</a>
+                <p>{{service.description}}</p>
+                <a href="#">{{service.button}}</a>
             </div>
-
-            <div class="divcontent divcontent3">
-                <div class="flex">
-                    <img src={{softwareproduct.softimg}}>
-                    <h2>{{softwareproduct.softwaretag}}</h2>
-                </div>
-                <p>{{softwareproduct.softwaredescription}}</p>
-                <a href="#">{{softwareproduct.learnmore}}</a>
-            </div>
-
-            <div class="divcontent divcontent4">
-                <div class="flex">
-                    <img src="{{agile.agileimg}}">
-                    <h2>{{agile.agiletag}}</h2>
-                </div>
-                <p>{{agile.agiledescription}}</p>
-                <a href="#">{{agile.learnmore}}</a>
-            </div>
-
-            <div class="divcontent divcontent5">
-                <div class="flex">
-                    <img src="{{digitalstratargy.digitalimg}}">
-                    <h2>{{digitalstratargy.digitaltag}}</h2>
-                </div>
-                <p>{{digitalstratargy.digitaldescription}}</p>
-                <a href="#">{{digitalstratargy.learnmore}}</a>
-            </div>
-
-            <div class="divcontent divcontent6">
-                <div class="flex">
-                    <img src={{softwareoutsourcing.outsourceimg}}>
-                    <h2>{{softwareoutsourcing.outsourcingtag}}</h2>
-                </div>
-                <p>{{softwareoutsourcing.outsourcingdescription}}</p>
-                <a href="#">{{softwareoutsourcing.learnmore}}</a>
-            </div>
-
-            <div class="divcontent divcontent7">
-                <h2>{{contactus.chooseustag}}<span style="font-weight: bold;">{{contactus.dropline}}</span></h2>
-                <button [type]="contactus.contactbtn">Contact Us</button>
-            </div>
-        </div>
     </div>
+</div>
+        
+   
 
-    <!-- ___________________________________________________________ -->
+  
+    
     <div class="experience">
 
         <div class="contentexp">
