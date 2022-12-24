@@ -140,15 +140,15 @@ interface RatingBox{
   para:string,
   verfied:string
 }
-interface Awards{ 
-  awards:string,
-  recognization:string,
-  img1:string,
-  img2:string,
-  img3:string,
-  img4:string,
-  img5:string,
-}
+// interface Awards{ 
+//   awards:string,
+//   recognization:string,
+//   img1:string,
+//   img2:string,
+//   img3:string,
+//   img4:string,
+//   img5:string,
+// }
 
 interface Blog {
   ourblog:string,
@@ -483,15 +483,16 @@ verfied: 'Verified Review'
 
 ];
 
-  awards:Awards = {
-    awards: 'Awards &',
-    recognization: 'Recognitions',
-    img1: '../assets/images/award-2.webp',
-    img2: '../assets/images/award-3.webp',
-    img3: '../assets/images/award-4.webp',
-    img4: '../assets/images/award-5.webp',
-    img5: '../assets/images/award-6.webp'
-  }
+  awards = [
+    
+    // awards: 'Awards &',
+    // recognization: 'Recognitions',
+     '../assets/images/award-2.webp',
+    '../assets/images/award-3.webp',
+    '../assets/images/award-4.webp',
+    '../assets/images/award-5.webp',
+    '../assets/images/award-6.webp'
+  ]
   
   blog:Blog = {
     ourblog: 'Our Blog',

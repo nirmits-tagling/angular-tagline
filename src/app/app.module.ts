@@ -13,6 +13,7 @@ import { BackendTechnologiesComponent } from './backend-technologies/backend-tec
 import { FrontendTechnologiesComponent } from './frontend-technologies/frontend-technologies.component';
 import { ClienteleComponent } from './clientele/clientele.component';
 import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
+import { AwardComponent } from './award/award.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
     FrontendTechnologiesComponent,
     ClienteleComponent,
     ReviewBoxesComponent,
+    AwardComponent,
 
   ],
   imports: [

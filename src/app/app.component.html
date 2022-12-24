@@ -363,19 +363,21 @@
     <!-- ____________________________________________________________________ -->
 
 
-    <div class="awards">
-        <!-- <div class="awardhead"> -->
-        <h1>{{awards.awards}} <br>{{awards.recognization}}</h1>
-        <!-- </div> -->
-        <div class="awardimage">
+        
+     <div class="awards"> 
+        <div class="awardhead">
+            <app-award [awardData]="awards"></app-award>
+        <!-- <h1>{{awards.awards}} <br>{{awards.recognization}}</h1> --> -->
+        </div> 
+        <!-- <div class="awardimage">
             <img src="{{awards.img1}}" height="160" width="160">
             <img src="{{awards.img2}}" height="160" width="160">
             <img src="{{awards.img3}}" height="160" width="160">
             <img src="{{awards.img4}}" height="160" width="160">
             <img src="{{awards.img5}}" height="160" width="160">
-        </div>
+        </div> -->
 
-    </div>
+    <!-- </div> -->
 
     <!-- ____________________________________________________________________ -->
 
