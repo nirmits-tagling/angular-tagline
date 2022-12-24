@@ -128,7 +128,7 @@
 
                 <h2>{{frontend.fronttag}}</h2>
 
-                <app-frontend-technologies  [frontenddata]="frontend"></app-frontend-technologies>
+                <app-frontend-technologies [frontenddata]="frontend"></app-frontend-technologies>
                 <!-- <div class="frontend">
                     <div class="react">
                         <img src="{{frontend.reactimg}}">
@@ -165,7 +165,7 @@
 
     <!-- ____________________________________________________________________ -->
 
-
+<!-- 
     <h1 class="taglinewhyhead">{{whytagline.whychoosetag}}</h1>
     <span class="headerline"></span>
     <p class="taglinewhyp">{{whytagline.whychoosedescription}}</p>
@@ -214,19 +214,22 @@
             <h1>{{whytagline.empowertag}}<span></span> {{whytagline.your}} <span>{{whytagline.business}}</span>{{whytagline.dedicateddev}}</h1>
             <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
         </div>
-    </div>
+    </div> -->
 
     <!-- ____________________________________________________________________ -->
 
     <div class="reviews">
-        <div class="reviewword">
+        <app-clientele [cilentData]="clientele"></app-clientele>
+        <!-- <div class="reviewword">
             <h1>{{ clientele.headtag}}</h1>
             <span class="headerline"></span>
             <p>{{ clientele.description1}}</p>
             <p>{{ clientele.description2}}</p>
-        </div>
-        <div class="reviewsboxes">
-            <div class="revbox">
+        </div> -->
+       
+            <app-review-boxes [ratingboxdata]="ratingbox"></app-review-boxes>
+    </div>
+            <!-- <div class="revbox">
                 <div class="rating">
                     <h3>{{ clientele.rating}}</h3>
                     <div class="icon">
@@ -353,9 +356,9 @@
             </div>
 
             
-        </div>
+        </div> -->
 
-    </div>
+
 
     <!-- ____________________________________________________________________ -->
 

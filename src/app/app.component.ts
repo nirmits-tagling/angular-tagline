@@ -124,36 +124,7 @@ interface Frontend{
   htmltag:string,
 }
 
-interface Whytagline{
-whychoosetag:string,
-whychoosedescription:string,
-one:string,
-progressive:string,
-progressivedescription:string,
-progressiveimg:string
-two:string,
-efficient:string,
-efficientdescription:string,
-efficientimg:string
-three:string,
-flexible:string,
-flexibledescription:string,
-flexibleimg:string,
-four:string,
-costeffective:string,
-costeffectivedescription:string,
-costeffectiveimg:string,
-five:string,
-consistent:string,
-consistentdescription:string,
-consistentimg:string,
-empowertag:string,
-talkbtn:string,
-your:string,
-business:string,
-dedicateddev:string,
 
-}
 
 
 
@@ -161,13 +132,14 @@ interface Clientele {
   headtag:string,
   description1:string,
   description2:string,
+ 
+}
+interface RatingBox{
   rating:string,
-
   small:string,
   para:string,
   verfied:string
 }
-
 interface Awards{ 
   awards:string,
   recognization:string,
@@ -426,46 +398,91 @@ export class AppComponent {
     htmltag: 'HTML5'
   }
 
-  whytagline:Whytagline = {
-    whychoosetag: 'Why Choose Tagline Infotech ?',
-    whychoosedescription: 'We have a team of developers who use their expertise to provide complete web development, mobile app development, testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers that you can hire by mentioning the requirements for your project. Save time and money by hiring our developers for your startup or large-scale company. Our team of developers has the experience to understand the business ideas of the clients to provide solutions that focus on the core values of the business. Here you will find some benefits of hiring developers from us.',
-
-    progressive: 'Progressive',
-    progressivedescription: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive',
-    efficient: 'Efficient',
-    efficientdescription: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently',
-    flexible: 'Flexible',
-    flexibledescription: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
-    costeffective: 'Costeffective',
-    costeffectivedescription: 'Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring',
-    consistent: 'consistent',
-    consistentdescription: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.',
-    empowertag: 'Empower',
-    one: '1',
-    two: '2',
-    three: '3',
-    four: '4',
-    five: '5',
-    progressiveimg: '../assets/images/choose-roadmap.png',
-    efficientimg: '../assets/images/choose-project.png',
-    flexibleimg: '../assets/images/choose-flexible.svg',
-    costeffectiveimg: '../assets/images/choose-cost.png',
-    consistentimg: '../assets/images/choose-delivery.png',
+   whytagline = [
+//{     tag: 'Why Choose Tagline Infotech ?',
+// description: 'We have a team of developers who use their expertise to provide complete web development, mobile app development, testing & assurance, SaaS development, and designing services. Tagline Infotech has a team of developers that you can hire by mentioning the requirements for your project. Save time and money by hiring our developers for your startup or large-scale company. Our team of developers has the experience to understand the business ideas of the clients to provide solutions that focus on the core values of the business. Here you will find some benefits of hiring developers from us.',
+//   },
+  {
+    number: '1',
+   tittle: 'Progressive',
+    description: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive',
+    img: '../assets/images/choose-roadmap.png',
+  },{
+    number: '2',
+    title: 'Efficient',
+description: 'We believe in efficient project management and our experienced developers use project management tools like Wrike and Zoho. Our developers use these project management tools efficiently',
+img: '../assets/images/choose-project.png',
+  },{
+    number: '3',
+    title: 'Flexible',
+  description: 'We provide flexible engagement models so that clients can hire developers for their projects. These engagement models are flexible so if you aren’t satisfied with any model you can switch to another.',
+    img: '../assets/images/choose-flexible.svg',
+  },
+  {
+    number: '4',
+    title: 'Costeffective',
+    description: 'Our team of developers provides the best development services at affordable prices. We believe that high-quality solutions can be delivered at cost-effective prices and that’s why we provide different hiring',
+    img: '../assets/images/choose-cost.png',
+  },
+  {
+    number: '5',
+    title: 'consistent',
+  description: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.',
+  img: '../assets/images/choose-delivery.png',
+  },
+  {
+    empowertag: 'Empower', 
     your: 'Your',
     business: 'Business',
     dedicateddev: 'with Dedicated Devlopers',
     talkbtn: 'button'
-  }
+  }]
 
   clientele:Clientele = {
     headtag: 'Words From Our Clientele',
     description1: 'Good things come for those who work hard, and thats why our clientele appreciate our efforts. Tagline Infotech provides the best services to its clients, and it is reflected through our ratings and reviews on various platforms.',
     description2: 'We are a well-known IT services company on Clutch. Check out what our customers have to say about our services. Read their ratings, feedback, and stories about partnering with us before making your own decision.',
+     };
+
+     ratingbox = [{
     rating: '5.0',
     small: 'Everything always turns out perfectly done.',
     para: 'IT & Computer Scientist, Self-Employed',
     verfied: 'Verified Review'
-  }
+  },
+  {
+    rating: '5.0',
+small: 'Everything always turns out perfectly done.',
+para: 'IT & Computer Scientist, Self-Employed',
+verfied: 'Verified Review'
+},
+{
+  rating: '5.0',
+small: 'Everything always turns out perfectly done.',
+para: 'IT & Computer Scientist, Self-Employed',
+verfied: 'Verified Review'
+},
+{
+  rating: '5.0',
+small: 'Everything always turns out perfectly done.',
+para: 'IT & Computer Scientist, Self-Employed',
+verfied: 'Verified Review'
+},
+{
+  rating: '5.0',
+small: 'Everything always turns out perfectly done.',
+para: 'IT & Computer Scientist, Self-Employed',
+verfied: 'Verified Review'
+},
+{
+  rating: '5.0',
+small: 'Everything always turns out perfectly done.',
+para: 'IT & Computer Scientist, Self-Employed',
+verfied: 'Verified Review'
+},
+
+];
+
   awards:Awards = {
     awards: 'Awards &',
     recognization: 'Recognitions',

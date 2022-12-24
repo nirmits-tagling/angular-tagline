@@ -1,0 +1,26 @@
+<div class="reviewsboxes">
+<div class="revbox" *ngFor="let boxes of ratingboxdata">
+    <div class="rating">
+        <h3>{{ boxes.rating}}</h3>
+        <div class="icon">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+        </div>
+    </div>
+
+    <p>{{boxes.para}}</p>
+    <small>{{ boxes.small}}</small>
+
+    <div class="verified">
+        <i class="bi bi-patch-check-fill"></i>&nbsp;
+        <p>{{boxes.verfied}}</p>
+    </div>
+</div>
+</div>
+
+
+
+

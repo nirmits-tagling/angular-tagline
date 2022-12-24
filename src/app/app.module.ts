@@ -11,6 +11,9 @@ import { MainSectionComponent } from './main-section/main-section.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { BackendTechnologiesComponent } from './backend-technologies/backend-technologies.component';
 import { FrontendTechnologiesComponent } from './frontend-technologies/frontend-technologies.component';
+import { ClienteleComponent } from './clientele/clientele.component';
+import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { FrontendTechnologiesComponent } from './frontend-technologies/frontend-
     MainSectionComponent,
     TechnologiesComponent,
     BackendTechnologiesComponent,
-    FrontendTechnologiesComponent
+    FrontendTechnologiesComponent,
+    ClienteleComponent,
+    ReviewBoxesComponent,
+
   ],
   imports: [
     BrowserModule,
