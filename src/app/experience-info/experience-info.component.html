@@ -1,0 +1,26 @@
+<div class="experience">
+
+     <!-- <div class="contentexp">
+        <h2>{{experience.experiencetag}}</h2>
+        <p>{{experience.experiencedescription}}</p>
+        <button [type]="experience.contactbtn">Contact Us</button>
+    </div> 
+
+     <span>
+        <img src="{{experience.imgtag}}" height="490">
+    </span>  -->
+
+
+
+    <div class="numberexp">
+
+        <div class="fulldiv1" class="fulldiv2">
+            <div class="div1" class="div3" *ngFor="let info of experienceInfoData">
+                <img src="{{info.img}}">
+                <h1>{{info.tittle}}</h1>
+                <h5>{{info.description}}</h5>
+            </div>
+        
+    </div>
+</div>
+</div>

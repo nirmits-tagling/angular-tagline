@@ -18,7 +18,7 @@ interface Services{
 })
 export class ServiceComponent implements OnInit {
   @Input()
-  serviceData!: Services;
+ serviceData!: Services[];
 
   constructor() { }
 

@@ -4,14 +4,8 @@
 
         <app-headernavbar [headernavcontent]="labelHeader"></app-headernavbar>
 
-
-        <div class="headtext">
-            <h1>{{mainsection.softwaretag}} <br>{{mainsection.itconsultanytag}} </h1>
-            <h1>{{mainsection.servingtag}} <span>{{mainsection.startuptag}} </span></h1>
-            <p>{{mainsection.innovationtag}}<br>{{mainsection.changetag}}</p>
-            <button [type]="mainsection.meetingbutton">Shedule Meeting</button>
-            <img src={{mainsection.backgroundimg}}>
-        </div>
+        <app-main-section [sectiondata]="mainsection"></app-main-section>
+       
     </div>
 
     <!-- ___________________________________________________________ -->
@@ -43,10 +37,11 @@
 </div> -->
         
    
-
+<app-experience-info [experienceInfoData]="experincesubs"></app-experience-info>
+<app-experience-section [experiencedata]="experience"></app-experience-section>
   
     
-    <div class="experience">
+    <!-- <div class="experience">
 
         <div class="contentexp">
             <h2>{{experience.experiencetag}}</h2>
@@ -71,7 +66,7 @@
             
         </div>
     </div>
-    </div>
+    </div> -->
 
     <!-- ____________________________________________________________________ -->
 
