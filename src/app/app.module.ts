@@ -8,6 +8,9 @@ import { ServiceComponent } from './service/service.component';
 import { ExperienceInfoComponent } from './experience-info/experience-info.component';
 import { ExperienceSectionComponent } from './experience-section/experience-section.component';
 import { MainSectionComponent } from './main-section/main-section.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+import { BackendTechnologiesComponent } from './backend-technologies/backend-technologies.component';
+import { FrontendTechnologiesComponent } from './frontend-technologies/frontend-technologies.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { MainSectionComponent } from './main-section/main-section.component';
     ServiceComponent,
     ExperienceInfoComponent,
     ExperienceSectionComponent,
-    MainSectionComponent
+    MainSectionComponent,
+    TechnologiesComponent,
+    BackendTechnologiesComponent,
+    FrontendTechnologiesComponent
   ],
   imports: [
     BrowserModule,
