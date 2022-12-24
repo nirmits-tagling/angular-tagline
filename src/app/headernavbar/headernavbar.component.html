@@ -1,0 +1,15 @@
+<div class="header">
+
+    <nav>
+        <ul>
+            <img [src]="taglinelogo">
+            <li *ngFor="let label of headernavcontent">
+                <a href="#">{{label}}</a></li>
+            <li>
+                
+            <div class="btnget">
+                <button [type]="btnHeaderType" style="display: flex; justify-content: end;">{{getquote}}</button>
+            </div>
+        </ul>
+    </nav>
+</div>

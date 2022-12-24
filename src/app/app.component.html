@@ -2,43 +2,7 @@
 
     <div class="topbar">
 
-        <div class="header">
-
-            <nav>
-                <ul>
-                    <img src={{labelHeader.taglinelogo}}>
-                    <li><a href="#">{{labelHeader.caseStudy}}</a></li>
-                    <li>
-                        <label>{{labelHeader.about}}</label>
-                        <select>
-
-                        </select>
-                    </li>
-                    <li>
-                        <label>{{labelHeader.hireDevelopers}}</label>
-                        <select>
-
-                        </select>
-                    </li>
-                    <li>
-                        <label>{{labelHeader.technology}}</label>
-                        <select>
-
-                        </select>
-                    </li>
-                    <li>
-                        <label>{{labelHeader.industry}}</label>
-                        <select>
-
-                        </select>
-                    </li>
-                    <div class="btnget">
-                        <button [type]="labelHeader.button" style="display: flex; justify-content: end;">{{mainsection.getquote}}</button>
-                    </div>
-                </ul>
-            </nav>
-        </div>
-
+        <app-headernavbar [headernavcontent]="labelHeader"></app-headernavbar>
 
 
         <div class="headtext">
@@ -61,7 +25,9 @@
                 <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{service.find}}<br> <span
                         style="font-weight: bolder; font-size: 60px;">{{service.rightoffer}}</span> <br> {{service.foryou}}</h1>
             </div> -->
-    <div class="services">
+
+            <app-service [serviceData]="services"></app-service>
+    <!-- <div class="services">
 
         <div class="boxes">
             <div class="divcontent divcontent2" *ngFor="let service of services">
@@ -74,7 +40,7 @@
                 <a href="#">{{service.button}}</a>
             </div>
     </div>
-</div>
+</div> -->
         
    
 
@@ -96,34 +62,16 @@
 
         <div class="numberexp">
 
-            <div class="fulldiv1">
-                <div class="div1">
-                    <img src="{{experiencesub.contentlogo1}}">
-                    <h1>{{experiencesub.plusexp1}}</h1>
-                    <h5>{{experiencesub.plusexptag1}}</h5>
+            <div class="fulldiv1" class="fulldiv2">
+                <div class="div1" class="div3" *ngFor="let experincesub of experincesubs">
+                    <img src="{{experincesub.img}}">
+                    <h1>{{experincesub.tittle}}</h1>
+                    <h5>{{experincesub.description}}</h5>
                 </div>
-                <div class="div2">
-                    <img src="{{experiencesub.contentlogo2}}">
-                    <h1>{{experiencesub.plusexp2}}</h1>
-                    <h5>{{experiencesub.plusexptag2}}</h5>
-                </div>
-            </div>
-
-            <div class="fulldiv2">
-                <div class="div3">
-                    <img src="{{experiencesub.contentlogo3}}">
-                    <h1>{{experiencesub.plusexp3}}</h1>
-                    <h5>{{experiencesub.plusexptag3}}</h5>
-                </div>
-                <div class="div4">
-                    <img src="{{experiencesub.contentlogo4}}">
-                    <h1>{{experiencesub.plusexp4}}</h1>
-                    <h5>{{experiencesub.plusexptag4}}</h5>
-                </div>
-            </div>
+            
         </div>
     </div>
-
+    </div>
 
     <!-- ____________________________________________________________________ -->
 

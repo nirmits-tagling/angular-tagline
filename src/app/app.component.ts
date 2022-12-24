@@ -55,21 +55,27 @@ interface Experience{
   imgtag:string
 }
 
-interface Experiencesub{
-  contentlogo1:string,
-  contentlogo2:string,
-  contentlogo3:string,
-  contentlogo4:string,
-  plusexp1:string,
-  plusexp2:string,
-  plusexp3:string,
-  plusexp4:string,
-  plusexptag1:string,
-  plusexptag2:string,
-  plusexptag3:string,
-  plusexptag4:string,
-}
+// interface Experiencesub{
+//   contentlogo1:string,
+//   contentlogo2:string,
+//   contentlogo3:string,
+//   contentlogo4:string,
+//   plusexp1:string,
+//   plusexp2:string,
+//   plusexp3:string,
+//   plusexp4:string,
+//   plusexptag1:string,
+//   plusexptag2:string,
+//   plusexptag3:string,
+//   plusexptag4:string,
+// }
 
+interface Experiencesub{
+  img:string,
+  tittle:string,
+  description:string
+
+}
 interface Technologies{
   technologies:string,
   web:string,
@@ -248,16 +254,17 @@ interface Footer{
 })
 export class AppComponent {
   title = 'tagline-angular';
+  labelHeader = ["Case Study","About Us","Hire Developers","Technology","Industry"]
 
-  labelHeader: LabelHeader = {
-    caseStudy: "case Study",
-    about: 'about Us',
-    hireDevelopers: 'hire developers',
-    technology: 'technology',
-    industry: 'industry',
-    taglinelogo: "../assets/../assets/images/tagline.png",
-    button: "button",
-  }
+  // labelHeader: LabelHeader = {
+  //   caseStudy: "case Study",
+  //   about: 'about Us',
+  //   hireDevelopers: 'hire developers',
+  //   technology: 'technology',
+  //   industry: 'industry',
+  //   taglinelogo: "../assets/../assets/images/tagline.png",
+  //   button: "button",
+  // }
 
 
   mainsection:MainSection = {
@@ -330,20 +337,48 @@ export class AppComponent {
     imgtag:'../assets/../assets/images/woman.webp'
   }
 
-  experiencesub:Experiencesub = {
-    contentlogo1: '../assets/../assets/images/contentlogo.webp',
-    contentlogo2: '../assets/../assets/images/contentlogo2.webp',
-    contentlogo3: '../assets/../assets/images/contentlogo3.webp',
-    contentlogo4: '../assets/../assets/images/contentlogo4.webp',
-    plusexp1: '125+',
-    plusexp2: '450+',
-    plusexp3: '150+',
-    plusexp4: '5+',
-    plusexptag1: 'Professional',
-    plusexptag2: 'Completed Projects',
-    plusexptag3: 'Freelance Hours',
-    plusexptag4: 'Years of experience',
-  }
+  experincesubs:Experiencesub []= [
+    {
+      img:'../assets/../assets/images/contentlogo.webp',
+  tittle:'125+',
+  description:'Professional'
+
+    },
+    {
+      img:'../assets/../assets/images/contentlogo2.webp',
+  tittle:'450+',
+  description:'Completed Projects'
+
+    },
+    {
+      img:'../assets/../assets/images/contentlogo3.webp',
+  tittle:'150+',
+  description:'Freelance Hours'
+
+    },
+    {
+      img:'../assets/../assets/images/contentlogo4.webp',
+  tittle:'5+',
+  description:'Years of experience'
+
+    }
+  ]
+    
+  
+  // experiencesub:Experiencesub = {
+  //   contentlogo1: '../assets/../assets/images/contentlogo.webp',
+  //   contentlogo2: '../assets/../assets/images/contentlogo2.webp',
+  //   contentlogo3: '../assets/../assets/images/contentlogo3.webp',
+  //   contentlogo4: '../assets/../assets/images/contentlogo4.webp',
+  //   plusexp1: '125+',
+  //   plusexp2: '450+',
+  //   plusexp3: '150+',
+  //   plusexp4: '5+',
+  //   plusexptag1: 'Professional',
+  //   plusexptag2: 'Completed Projects',
+  //   plusexptag3: 'Freelance Hours',
+  //   plusexptag4: 'Years of experience',
+  // }
   technologies:Technologies = {
     technologies: 'Our Technologies',
     web: 'Web',
@@ -508,5 +543,6 @@ export class AppComponent {
     rightreserved: 'All rights reserved by',
     llp: 'Tagline Infotech LLP'
   }
+
 
 }

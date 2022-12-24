@@ -1,0 +1,17 @@
+
+
+
+<div class="services">
+
+    <div class="boxes">
+        <div class="divcontent divcontent2" *ngFor="let service of serviceData">
+            
+            <div class="flex">
+                <img src={{service.img}}>
+                <h2>{{service.tag}}</h2>
+            </div>
+            <p>{{service.description}}</p>
+            <a href="#">{{service.button}}</a>
+        </div>
+</div>
+</div>
