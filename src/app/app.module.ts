@@ -15,6 +15,7 @@ import { ClienteleComponent } from './clientele/clientele.component';
 import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
 import { AwardComponent } from './award/award.component';
 import { BlogComponent } from './blog/blog.component';
+import { GlobalPresenceComponent } from './global-presence/global-presence.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { BlogComponent } from './blog/blog.component';
     ReviewBoxesComponent,
     AwardComponent,
     BlogComponent,
+    GlobalPresenceComponent,
 
   ],
   imports: [

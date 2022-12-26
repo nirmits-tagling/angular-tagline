@@ -162,19 +162,19 @@ interface RatingBox{
   
 // }
 
-interface Global{
-  global:string,
-  hq:string,
-  address1:string,
-  no1:string,
-  usa:string, 
-  address2:string,
-  no2:string,
-  uk:string,
-  address3:string,
-  no3:string,
-  email:string,
-}
+// interface Global{
+//   global:string,
+//   hq:string,
+//   address1:string,
+//   no1:string,
+//   usa:string, 
+//   address2:string,
+//   no2:string,
+//   uk:string,
+//   address3:string,
+//   no3:string,
+//   email:string,
+// }
 
 interface Globalform{
   getquote:string,
@@ -518,7 +518,7 @@ verfied: 'Verified Review'
     button:'RoR'
 }]
 
-  global:Global = {
+  global = {
     global: 'Our Global Presence',
     hq: 'India (HQ)',
     address1: 'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101',
