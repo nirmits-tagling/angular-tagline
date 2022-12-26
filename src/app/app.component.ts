@@ -252,6 +252,9 @@ export class AppComponent {
   }
 
   services = [
+    {
+      head:'Find the right offers.'
+    },
     // ourservices: 'Our Services',
     // find: 'Find the',
     // rightoffer: 'right offers',

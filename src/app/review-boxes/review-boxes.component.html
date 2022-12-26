@@ -2,13 +2,8 @@
 <div class="revbox" *ngFor="let boxes of ratingboxdata">
     <div class="rating">
         <h3>{{ boxes.rating}}</h3>
-        <div class="icon">
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-            <i class="bi bi-star-fill"></i>
-        </div>
+        <ngb-rating [max]="5" [(rate)]="boxes.rating" [readonly]="false"></ngb-rating>
+    
     </div>
 
     <p>{{boxes.para}}</p>

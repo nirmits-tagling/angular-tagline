@@ -24,6 +24,7 @@ import { ServicesComponent } from './services/services.component';
 import { HireDevelopersComponent } from './hire-developers/hire-developers.component';
 import { LastFooterComponent } from './last-footer/last-footer.component';
 import { ChooseTaglineComponent } from './choose-tagline/choose-tagline.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { ChooseTaglineComponent } from './choose-tagline/choose-tagline.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
