@@ -1,1 +1,11 @@
-<p>choose-tagline works!</p>
+<div class="empowers">
+<div class="empowerbox" *ngFor="let choose of chooseTagline">
+    <div class="imgnumflex">
+        <img src="{{choose.img}}">
+        <h1>{{choose.tag}}</h1>
+    </div>
+    <h2>{{choose.title}}</h2>
+    <p>{{choose.description}}</p>
+   
+</div>
+</div>

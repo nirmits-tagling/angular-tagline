@@ -295,6 +295,9 @@ export class AppComponent {
     button: 'Learn More',
    
   },
+  
+  
+  
  ];
   // contactus:Contactus = {
   //   chooseustag: 'Dont know what to choose? ',
@@ -404,7 +407,7 @@ export class AppComponent {
 //   },
   {
     number: '1',
-   tittle: 'Progressive',
+   title: 'Progressive',
     description: 'Our team of developers creates a progressive roadmap that includes a strategic plan to define a goal and major steps to reach that goal. We have a team of developers that uses progressive',
     img: '../assets/images/choose-roadmap.png',
   },{

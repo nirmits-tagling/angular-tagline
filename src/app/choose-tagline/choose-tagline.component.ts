@@ -1,10 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface whytagline{
-  number:string,
-  tittle:string,
-  description:string,
-  img:string
+interface Whytagline{
+  tag ?:string,
+  title ?:string,
+  description ?:string,
+  img ?:string,
+  chooseustag?: string,
+  dropline ?:string,
+  contactbtn ?: string
 }
 @Component({
   selector: 'app-choose-tagline',
@@ -14,7 +17,7 @@ interface whytagline{
 export class ChooseTaglineComponent implements OnInit {
 
   @Input()
-  chooseTagline!: whytagline;
+  chooseTagline:Whytagline[]=[];
 
   constructor() { }
 
