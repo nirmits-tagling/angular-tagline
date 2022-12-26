@@ -150,17 +150,17 @@ interface RatingBox{
 //   img5:string,
 // }
 
-interface Blog {
-  ourblog:string,
-  python:string,
-  pythondes:string,
-  readmore:string,
-  nodejs:string,
-  nodejsdes:string,
-  ror:string,
-  rordes:string,
+// interface Blog {
+//   ourblog:string,
+//   python:string,
+//   pythondes:string,
+//   readmore:string,
+//   nodejs:string,
+//   nodejsdes:string,
+//   ror:string,
+//   rordes:string,
   
-}
+// }
 
 interface Global{
   global:string,
@@ -494,16 +494,29 @@ verfied: 'Verified Review'
     '../assets/images/award-6.webp'
   ]
   
-  blog:Blog = {
-    ourblog: 'Our Blog',
-    python: 'Python vs Java Comparison Of',
-    pythondes: 'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
+  blogs = [{
+
+    title: 'Python vs Java Comparison Of',
+    description: 'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
     readmore: 'Read More ->',
-    nodejs: 'Node Js',
-    nodejsdes: 'Best Practices for Node.js Application Development:...',
-    ror: 'JavaScript vs Ruby On Rails: What...',
-    rordes: 'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among'
-  }
+    img:'../assets/images/Python-vs-Java.png',
+    button:'Python'
+  },
+   {
+ 
+   title: 'Node Js',
+   description: 'Best Practices for Node.js Application Development:...',
+    readmore: 'Read More ->',
+    img:'../assets/images/Node.js-Application.png',
+    button:'NodeJs'
+   },{
+  
+    title: 'JavaScript vs Ruby On Rails: What...',
+    description: 'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
+    readmore: 'Read More ->',
+    img:'../assets/images/Kotlin-vs-Java.png',
+    button:'RoR'
+}]
 
   global:Global = {
     global: 'Our Global Presence',

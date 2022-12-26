@@ -14,6 +14,7 @@ import { FrontendTechnologiesComponent } from './frontend-technologies/frontend-
 import { ClienteleComponent } from './clientele/clientele.component';
 import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
 import { AwardComponent } from './award/award.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { AwardComponent } from './award/award.component';
     ClienteleComponent,
     ReviewBoxesComponent,
     AwardComponent,
+    BlogComponent,
 
   ],
   imports: [
