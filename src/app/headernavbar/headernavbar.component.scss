@@ -3,16 +3,16 @@ ul {
     position: sticky;
 }
 
-.header{
-    position: fixed;
-    z-index: 9999;
-    left: 0;
-    top: 0;
-    right: 0;
-    flex-wrap: wrap;
-    background-color: white;
+// .header{
+//     position: fixed;
+//     z-index: 9999;
+//     left: 0;
+//     top: 0;
+//     right: 0;
+//     flex-wrap: wrap;
+//     background-color: white;
     
-}
+// }
 
 .header nav img {
     margin: 10px 8%;
@@ -40,19 +40,19 @@ nav ul li select {
 ul .btnget {
     display: flex;
     justify-content: center;
-    width: 38%;
+    width: 45%;
 }
 
 nav ul button {
     margin-top: 20px;
     height: 45px;
-    padding: 17px 28px;
+    padding: 17px 32px;
     border: none;
     border-radius: 5px;
     /* background-color: rgba(178, 28, 28, 0.593); */
     background: rgba(217, 97, 34, .3);
     color: #da6427;
-    min-width: 20%;
+    min-width: 130px;
     text-align: center;
     cursor: pointer;
     margin-left: 350px;

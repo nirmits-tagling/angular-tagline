@@ -1,13 +1,14 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Clientele } from '../common';
 
 
-interface Clientele {
-  headtag:string,
-  description1:string,
-  description2:string,
+// interface Clientele {
+//   headtag:string,
+//   description1:string,
+//   description2:string,
 
 
-}
+// }
 @Component({
   selector: 'app-clientele',
   templateUrl: './clientele.component.html',

@@ -251,7 +251,7 @@ export class AppComponent {
     getquote:"Get Quote",
   }
 
-  services:Services[] = [
+  services = [
     // ourservices: 'Our Services',
     // find: 'Find the',
     // rightoffer: 'right offers',
@@ -295,15 +295,15 @@ export class AppComponent {
     button: 'Learn More',
    
   },
-  
-  
-  
+ {
+    chooseustag : 'Dont know what to choose? ',
+    dropline :"Drop us a line.",
+    contactbtn: 'button'
+  }
  ];
-  // contactus:Contactus = {
-  //   chooseustag: 'Dont know what to choose? ',
-  //   dropline:"Drop us a line.",
-  //   contactbtn: 'button'
-  // }
+
+
+  
 
   experience:Experience = {
     experiencetag: 'We have the experience',

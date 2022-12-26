@@ -1,20 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Backend } from '../common';
 
-interface Backend{
-  backendtag:string,
-  rubyimg:string,
-  pythonimg:string,
-  nodejsimg:string,
-  phpimg:string,
-  javaimg:string,
-  golangimg:string,
-  rubytag:string,
-  pythontag:string,
-  nodejstag:string,
-  phptag:string,
-  javatag:string,
-  golangtag:string,
-}
+// interface Backend{
+//   backendtag:string,
+//   rubyimg:string,
+//   pythonimg:string,
+//   nodejsimg:string,
+//   phpimg:string,
+//   javaimg:string,
+//   golangimg:string,
+//   rubytag:string,
+//   pythontag:string,
+//   nodejstag:string,
+//   phptag:string,
+//   javatag:string,
+//   golangtag:string,
+// }
 
 @Component({
   selector: 'app-backend-technologies',

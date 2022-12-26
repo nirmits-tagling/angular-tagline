@@ -1,14 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Blog } from '../common';
 
-interface Blog {
+// interface Blog {
 
-  title:string,
-  description:string,
-  readmore:string,
-  img:string,
-  button:string
+//   title:string,
+//   description:string,
+//   readmore:string,
+//   img:string,
+//   button:string
   
-}
+// }
 
 
 @Component({

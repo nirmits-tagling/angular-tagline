@@ -1,14 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 interface Services{
-  button: string;
-  description: string;
-  tag: string;
-  img: string;
-    // ourservices:string,
-    // find:string,
-    // rightoffer:string,
-    // foryou:string,
+  button?: string,
+  description?: string,
+  tag?: string,
+  img?: string,
+  chooseustag ?:string,
+  dropline ?:string,
+  contactbtn ?:string
   }
 
 @Component({

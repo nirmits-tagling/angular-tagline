@@ -1,14 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Whytagline } from '../common';
 
-interface Whytagline{
-  tag ?:string,
-  title ?:string,
-  description ?:string,
-  img ?:string,
-  chooseustag?: string,
-  dropline ?:string,
-  contactbtn ?: string
-}
+// interface Whytagline{
+//   tag ?:string,
+//   title ?:string,
+//   description ?:string,
+//   img ?:string,
+//   chooseustag?: string,
+//   dropline ?:string,
+//   contactbtn ?: string
+// }
 @Component({
   selector: 'app-choose-tagline',
   templateUrl: './choose-tagline.component.html',

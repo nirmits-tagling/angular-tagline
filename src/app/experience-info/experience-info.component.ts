@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-interface Experience{
-  experiencetag:string,
-  experiencedescription:string,
-  contactbtn:string,
-  imgtag:string
-}
+// interface Experience{
+//   experiencetag:string,
+//   experiencedescription:string,
+//   contactbtn:string,
+//   imgtag:string
+// }
 
 @Component({
   selector: 'app-experience-info',
