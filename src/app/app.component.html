@@ -165,7 +165,7 @@
 
     <!-- ____________________________________________________________________ -->
 
-<!-- 
+ 
     <h1 class="taglinewhyhead">{{whytagline.whychoosetag}}</h1>
     <span class="headerline"></span>
     <p class="taglinewhyp">{{whytagline.whychoosedescription}}</p>
@@ -214,7 +214,7 @@
             <h1>{{whytagline.empowertag}}<span></span> {{whytagline.your}} <span>{{whytagline.business}}</span>{{whytagline.dedicateddev}}</h1>
             <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
         </div>
-    </div> -->
+    </div> 
 
     <!-- ____________________________________________________________________ -->
 
@@ -378,6 +378,7 @@
         </div> -->
 
     <!-- </div> -->
+     </div>
 
     <!-- ____________________________________________________________________ -->
 
@@ -455,20 +456,23 @@
 
             </div>
         </div> -->
-        <div class="forms">
+
+        <app-form [formData]="globalform"></app-form>
+        <!-- <div class="forms">
             <h1>{{globalform. getquote}}</h1>
             <input type="text" placeholder="Full Name"><br>
             <input type="text" placeholder="Phone"><br>
             <input type="email" placeholder="Email"><br>
             <textarea placeholder="Message" rows="3"></textarea><br>
             <button>Send Message</button>
-        </div>
+        </div> -->
     </div>
 
     <!-- ____________________________________________________________________ -->
 
     <div class="footer">
-        <div class="firstfooter">
+        <app-footer [footerData]="footer"></app-footer>
+        <!-- <div class="firstfooter">
             <div class="cont1">
                 <h3>{{footer.latest}}</h3>
                 <p> {{footer.sharemail}}<span style="color:#d66f37">{{footer.guides}} </span>{{footer.and}} <span
@@ -478,25 +482,27 @@
                 <input type="text" placeholder="Email"><span><button>{{footer.subscribe}}</button></span>
                 <p>{{footer.unsubscribe}}</p>
             </div>
-        </div>
-        <div class="division">
-            <div>
-                <div class="hr">
+        </div> -->
+         <div class="division">
+            <app-hr-creditencials [hrData]="hr"></app-hr-creditencials>
+                <!-- <div class="hr">
                     <h3>{{footer.inquiry}}</h3>
                     <ul>
                         <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp; </a>{{footer.email}}</li>
                         <li><a href=""><i class="bi bi-envelope-fill"></i>&nbsp; {{footer.no}}</a></li>
                     </ul>
-                </div>
-                <div class="sales">
+                </div> -->
+                <!-- <div class="sales">
                     <h3>{{footer.saless}}</h3>
                     <ul>
                         <li><a href=""> {{footer.email}}</a></li>
                         <li><a href=""> {{footer.tagline}}</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
-            <div class="help">
+
+            <app-help-advice [helpData]="helpadvice"></app-help-advice>
+             <!-- <div class="help">
                 <h3>{{footer.help}}</h3>
                 <ul>
                     <li><a href=""><i class="bi bi-telephone-fill"></i>&nbsp;{{footer.career}}</a></li>
@@ -506,8 +512,10 @@
                     <li><a href=""><i class="bi bi-file-earmark-lock2-fill"></i>&nbsp;{{footer.privacy}}</a></li>
                     <li><a href=""><i class="bi bi-diagram-3-fill"></i>&nbsp;{{footer.sitemap}}</a></li>
                 </ul>
-            </div>
-            <div class="service">
+            </div> -->
+
+            <app-services [serviceData]="servicesProvide"></app-services>
+            <!-- <div class="service">
                 <h3>{{footer.service}}</h3>
                 <ul>
                     <li><a href="">{{footer.mobile}}</a></li>
@@ -517,7 +525,11 @@
                     <li><a href="">{{footer.digital}}</a></li>
                 </ul>
             </div>
-            <div class="hire">
+
+              -->
+            <app-hire-developers [hireDeveloper]="developerHiring"></app-hire-developers>
+<!--  
+     <div class="hire">
                 <h3>{{footer.hire}}</h3>
                 <ul>
                     <li><a href="">{{footer.hirepython}}</a></li>
@@ -527,11 +539,12 @@
                     <li><a href="">{{footer.hirereact}}</a></li>
                     <li><a href="">{{footer.hirenative}}</a></li>
                 </ul>
-            </div>
+            </div> -->
 
-        </div>
+        </div> 
 
-        <div class="lastfooterdiv">
+        <app-last-footer [footerSection]="footerLast"></app-last-footer>
+          <!-- <div class="lastfooterdiv">
             <img src="../assets/images/tagline-stamp.png">
             <div><a href="" style="text-decoration: none;color: gray;font-size: 17px;">{{footer.follow}}<i
                         class="bi bi-facebook"></i>
@@ -543,8 +556,9 @@
                 </a></div>
             <p>© <span style="color:#d66f37">{{footer.year}}</span> {{footer.rightreserved}} <a href=""
                     style="text-decoration: none;color:#d66f37">{{footer.llp}}</a></p>
-        </div>
-    </div>
+        </div>  -->
+    
+    
 
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> 
