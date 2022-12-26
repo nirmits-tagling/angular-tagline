@@ -176,49 +176,49 @@ interface RatingBox{
 //   email:string,
 // }
 
-interface Globalform{
-  getquote:string,
-}
+// interface Globalform{
+//   getquote:string,
+// }
 
-interface Footer{
-  latest:string,
-  sharemail:string,
-  guides:string,
-  and:string
-  industrynews:string,
-  subscribe:string,
-  unsubscribe:string,
-  inquiry:string,
-  email:string,
-  no:string,
-  saless:string,
-  tagline:string,
-  help:string,
-  career:string,
-  aboutus:string,
-  contactus:string,
-  blog:string,
-  privacy:string,
-  sitemap:string,
-  service:string,
-  mobile:string,
-  webdev:string,
-  webdesign:string,
-  ui:string,
-  digital:string,
-  hire:string,
-  hirepython:string,
-  hireangular:string,
-  hireror:string,
-  hireflutter:string,
-  hirereact:string,
-  hirenative:string,
-  follow:string,
-  year:string,
-  rightreserved:string,
-  llp:string
+// interface Footer{
+//   latest:string,
+//   sharemail:string,
+//   guides:string,
+//   and:string
+//   industrynews:string,
+//   subscribe:string,
+//   unsubscribe:string,
+//   inquiry:string,
+//   email:string,
+//   no:string,
+//   saless:string,
+//   tagline:string,
+//   help:string,
+//   career:string,
+//   aboutus:string,
+//   contactus:string,
+//   blog:string,
+//   privacy:string,
+//   sitemap:string,
+//   service:string,
+//   mobile:string,
+//   webdev:string,
+//   webdesign:string,
+//   ui:string,
+//   digital:string,
+//   hire:string,
+//   hirepython:string,
+//   hireangular:string,
+//   hireror:string,
+//   hireflutter:string,
+//   hirereact:string,
+//   hirenative:string,
+//   follow:string,
+//   year:string,
+//   rightreserved:string,
+//   llp:string
 
-}
+// }
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -429,14 +429,14 @@ img: '../assets/images/choose-project.png',
     title: 'consistent',
   description: 'Our developers follow an agile approach to deliver the project before the deadline. We are providing consistent delivery of fully-featured projects as per the client’s requirements.',
   img: '../assets/images/choose-delivery.png',
-  },
-  {
-    empowertag: 'Empower', 
-    your: 'Your',
-    business: 'Business',
-    dedicateddev: 'with Dedicated Devlopers',
-    talkbtn: 'button'
   }]
+  // {
+  //   empowertag: 'Empower', 
+  //   your: 'Your',
+  //   business: 'Business',
+  //   dedicateddev: 'with Dedicated Devlopers',
+  //   talkbtn: 'button'
+  // }
 
   clientele:Clientele = {
     headtag: 'Words From Our Clientele',
@@ -532,11 +532,11 @@ verfied: 'Verified Review'
     email: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052'
   }
 
-  globalform:Globalform = {
+  globalform = {
     getquote: 'Get Your Free Quote Today'
   }
 
-  footer:Footer = {
+  footer = {
     latest: 'Get latest from Tagline Infotech',
     sharemail: 'Share your email so we can send you',
     guides: 'guides',
@@ -544,36 +544,30 @@ verfied: 'Verified Review'
     industrynews: 'industry news',
     subscribe: 'Subscribe',
     unsubscribe: 'You can unsubscribe at any time. Read our privacy policy.',
+  }
+
+ hr = {
     inquiry: 'HR Inquiry',
     email: '  hr@taglineinfotech.com',
     no: '+91 6354362521',
-    saless: 'Sales Inquiry',
+      saless: 'Sales Inquiry',
     tagline: ' Tagline infotech',
-    help: 'Help & Advice',
-    career: 'Career',
-    aboutus: 'About us',
-    contactus: 'Contact us',
-    blog: 'Blog',
-    privacy: 'Privacy Policy',
-    sitemap: 'Site Map',
-    service: 'Services',
-    mobile: 'Mobile',
-    webdev: 'Web Developers',
-    webdesign: 'Web Design',
-    ui: 'UI / UX Design',
-    digital: 'Digital Marketing',
-    hire: 'Hire Developers',
-    hirepython: 'Hire Python Developers',
-    hireangular: 'Hire Angular Developers',
-    hireror: 'Hire ROR Developers',
-    hireflutter: 'Hire Flutter Developers',
-    hirereact: 'Hire React Developers',
-    hirenative: 'Hire Native Developers',
-    follow: 'Follow Us',
-    year: '2022',
-    rightreserved: 'All rights reserved by',
-    llp: 'Tagline Infotech LLP'
   }
+
+  helpadvice = ['Career','About us','Contact us','Blog','Privacy Policy','Site Map']
+  // helpadvice = {
+  //   help: 'Help & Advice',
+  //   career: 'Career',
+  //   aboutus: 'About us',
+  //   contactus: 'Contact us',
+  //   blog: 'Blog',
+  //   privacy: 'Privacy Policy',
+  //   sitemap: 'Site Map',
+  // }
+    servicesProvide = ['Services','Mobile','Web Developers','Web Design','UI / UX Design','Digital Marketing',] ;
+    developerHiring = ['Hire Python Developers','Hire Angular Developers','Hire ROR Developers','Hire Flutter Developers','Hire React Developers','Hire Native Developers',];
+  footerLast = ['Follow Us','2022','All rights reserved by','Tagline Infotech LLP'];
+  // }
 
 
 }

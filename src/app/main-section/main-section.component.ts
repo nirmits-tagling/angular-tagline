@@ -1,16 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MainSection } from '../common';
 
-interface MainSection{
-  softwaretag:string,
-  itconsultanytag:string,
-  servingtag:string,
-  startuptag:string,
-  innovationtag:string
-  meetingbutton: string,
-  backgroundimg:string,
-  getquote:string
-  changetag:string
-}
+// interface MainSection{
+//   softwaretag:string,
+//   itconsultanytag:string,
+//   servingtag:string,
+//   startuptag:string,
+//   innovationtag:string
+//   meetingbutton: string,
+//   backgroundimg:string,
+//   getquote:string
+//   changetag:string
+// }
 
 @Component({
   selector: 'app-main-section',

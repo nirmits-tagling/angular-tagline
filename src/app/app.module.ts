@@ -16,6 +16,14 @@ import { ReviewBoxesComponent } from './review-boxes/review-boxes.component';
 import { AwardComponent } from './award/award.component';
 import { BlogComponent } from './blog/blog.component';
 import { GlobalPresenceComponent } from './global-presence/global-presence.component';
+import { FormComponent } from './form/form.component';
+import { FooterComponent } from './footer/footer.component';
+import { HrCreditencialsComponent } from './hr-creditencials/hr-creditencials.component';
+import { HelpAdviceComponent } from './help-advice/help-advice.component';
+import { ServicesComponent } from './services/services.component';
+import { HireDevelopersComponent } from './hire-developers/hire-developers.component';
+import { LastFooterComponent } from './last-footer/last-footer.component';
+import { ChooseTaglineComponent } from './choose-tagline/choose-tagline.component';
 
 
 @NgModule({
@@ -34,6 +42,14 @@ import { GlobalPresenceComponent } from './global-presence/global-presence.compo
     AwardComponent,
     BlogComponent,
     GlobalPresenceComponent,
+    FormComponent,
+    FooterComponent,
+    HrCreditencialsComponent,
+    HelpAdviceComponent,
+    ServicesComponent,
+    HireDevelopersComponent,
+    LastFooterComponent,
+    ChooseTaglineComponent,
 
   ],
   imports: [

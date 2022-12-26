@@ -1,0 +1,19 @@
+.footer .division div h3 {
+    font-size: 25px;
+}
+
+.footer .division ul {
+    flex-direction: column;
+}
+
+.footer .division ul li {
+    list-style: none;
+    padding: 15px 0 5px 0;
+
+}
+
+.footer .division ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: gray;
+}
