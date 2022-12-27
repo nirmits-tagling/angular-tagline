@@ -10,15 +10,13 @@
 
     <!-- ___________________________________________________________ -->
 
-<!--  
-         <h1>{{service.ourservices}}</h1>
-        <span class="headerline"></span>
+  
 
          <div class="boxes" >
-            <div class="divcontent divcontent1" style="border: none;">
-                <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{service.find}}<br> <span
-                        style="font-weight: bolder; font-size: 60px;">{{service.rightoffer}}</span> <br> {{service.foryou}}</h1>
-            </div>    -->
+            <!-- <div class="divcontent divcontent1" style="border: none;">
+                <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services}}<br> <span
+                        style="font-weight: bolder; font-size: 60px;"></span> <br> </h1>
+            </div>     -->
 
             <app-service [serviceData]="services"></app-service>
   
@@ -65,7 +63,7 @@
     <span class="headerline"></span>
     <div class="row">
 
-        <app-technologies [technologiesdata]="technologies"></app-technologies>
+        <!-- <app-technologies [technologiesdata]="technologies"></app-technologies> -->
         <!-- <div class="menu">
           
             <ul>
@@ -80,7 +78,11 @@
                 <li><a href="">{{technologies.clouds}}</a></li>
             </ul>
         </div> -->
-        <div class="language">
+        <div class="col-4">
+            <app-technologies [technologiesdata]="technologies"></app-technologies>
+        </div>
+        
+        <div class="language col-6">
             <div class="web">
                 <h1>{{technologies.web}}</h1>
                 <h2 style="margin-top: 20px;font-weight: 400;">{{backend.backendtag}}</h2>
@@ -150,6 +152,8 @@
                 </div> -->
             </div>
         </div>
+
+      
     </div>
     
 
@@ -412,7 +416,8 @@
     </div> -->
 
     <!-- ____________________________________________________________________ -->
-<app-global-presence [globalData]="global"></app-global-presence>
+<app-global-presence [globalData]="global">
+</app-global-presence>
     <div class="contactus">
         <!-- <div class="formdetail">
             <div class="address">
@@ -490,7 +495,7 @@
                         <li><a href=""> {{footer.tagline}}</a></li>
                     </ul>
                 </div> -->
-            </div>
+           
 
             <app-help-advice [helpData]="helpadvice"></app-help-advice>
              <!-- <div class="help">
@@ -550,6 +555,6 @@
         </div>  -->
     
     
-
+    </div>
 
 <router-outlet></router-outlet> 

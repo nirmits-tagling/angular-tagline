@@ -252,8 +252,11 @@ export class AppComponent {
   }
 
   services = [
+    // {
+    //     tag:'Our Services'
+    // },
     {
-      head:'Find the right offers.'
+      tag:'Find the right offers.'
     },
     // ourservices: 'Our Services',
     // find: 'Find the',
@@ -299,9 +302,9 @@ export class AppComponent {
    
   },
  {
-    chooseustag : 'Dont know what to choose? ',
-    dropline :"Drop us a line.",
-    contactbtn: 'button'
+    tag : 'Dont know what to choose? ',
+    description :"Drop us a line.",
+    button : 'Contact Us'
   }
  ];
 
