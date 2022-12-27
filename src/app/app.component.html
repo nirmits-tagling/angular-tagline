@@ -12,7 +12,7 @@
 
   
 
-         <div class="boxes" >
+         < class="boxes" >
             <!-- <div class="divcontent divcontent1" style="border: none;">
                 <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services}}<br> <span
                         style="font-weight: bolder; font-size: 60px;"></span> <br> </h1>
@@ -210,151 +210,19 @@
             <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
         </div>
     </div> -->
-
+    <!-- <div class="empowerbox lastempowerbox">
+        <h1>{{whytagline.empowertag}}<span></span> {{whytagline.your}} <span>{{whytagline.business}}</span>{{whytagline.dedicateddev}}</h1>
+        <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
+    </div> -->
     <!-- ____________________________________________________________________ -->
 
     <div class="reviews">
         <app-clientele [cilentData]="clientele"></app-clientele>
-        <!-- <div class="reviewword">
-            <h1>{{ clientele.headtag}}</h1>
-            <span class="headerline"></span>
-            <p>{{ clientele.description1}}</p>
-            <p>{{ clientele.description2}}</p>
-        </div> -->
+      
        
             <app-review-boxes [ratingboxdata]="ratingbox"></app-review-boxes>
     </div>
-            <!-- <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>{{ clientele.para}}</p>
-                <small>{{ clientele.small}}</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>&nbsp;
-                    <p>{{ clientele.verfied}}</p>
-                </div>
-            </div>
-
-            <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>"They understand complex technical requirements, and they have a team that quickly gets up to speed."</p>
-                <small>Founder, Cimpro.io</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <p>Verified Review</p>
-                </div>
-            </div>
-
-            <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>{{ clientele.para}}</p>
-                <small>{{ clientele.small}}</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <p>{{ clientele.verfied}}</p>
-                </div>
-            </div>
-
-            <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>{{ clientele.para}}</p>
-                <small>{{ clientele.small}}</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <p>{{ clientele.verfied}}</p>
-                </div>
-            </div>
-
-            <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>{{ clientele.para}}</p>
-                <small>{{ clientele.small}}</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <p>{{ clientele.verfied}}</p>
-                </div>
-            </div>
-
-            <div class="revbox">
-                <div class="rating">
-                    <h3>{{ clientele.rating}}</h3>
-                    <div class="icon">
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                    </div>
-                </div>
-
-                <p>{{ clientele.para}}</p>
-                <small>{{ clientele.small}}</small>
-
-                <div class="verified">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <p>{{ clientele.verfied}}</p>
-                </div>
-            </div>
-
-            
-        </div> -->
-
-
-
+          
     <!-- ____________________________________________________________________ -->
 
 
@@ -363,106 +231,34 @@
         <div class="awardhead">
             <app-award [awardData]="awards"></app-award>
         <!-- <h1>{{awards.awards}} <br>{{awards.recognization}}</h1> --> -->
-        </div> 
-        <!-- <div class="awardimage">
-            <img src="{{awards.img1}}" height="160" width="160">
-            <img src="{{awards.img2}}" height="160" width="160">
-            <img src="{{awards.img3}}" height="160" width="160">
-            <img src="{{awards.img4}}" height="160" width="160">
-            <img src="{{awards.img5}}" height="160" width="160">
-        </div> -->
+     
 
     <!-- </div> -->
      </div>
-
+     </div>
     <!-- ____________________________________________________________________ -->
 
     <!-- <div class="blogs"> -->
         <app-blog [blogData]="blogs"></app-blog>
-        <!-- <h1>{{blog.ourblog}}</h1>
-        <span class="headerline"></span>
-        <div class="bloggers">
-            <div class="blog">
-                <img src="../assets/images/Python-vs-Java.png">
-                <div style="display: flex;justify-content: space-between;">
-                    <button>Python</button>
-                    <p>15/12/22</p>
-                </div>
-                <h3>{{blog.python}}</h3>
-                <p>{{blog.pythondes}}</p>
-                <a href="#">{{blog.readmore}}</a>
-            </div>
-            <div class="blog">
-                <img src="../assets/images/Node.js-Application.png">
-                <div style="display: flex;justify-content: space-between;">
-                    <button></button>
-                    <p>9/12/22</p>
-                </div>
-                <h3>{{blog.nodejs}}</h3>
-                <p>{{blog.nodejsdes}}</p>
-                <a href="#">{{blog.readmore}}</a>
-            </div>
-            <div class="blog">
-                <img src="../assets/images/Kotlin-vs-Java.png">
-                <div style="display: flex;justify-content: space-between;">
-                    <button>RoR</button>
-                    <p>9/12/22</p>
-                </div>
-                <h3>{{blog.ror}}</h3>
-                <p>{{blog.rordes}}</p>
-                <a href="#">{{blog.readmore}}</a>
-            </div>
-        </div>
-    </div> -->
+      
 
     <!-- ____________________________________________________________________ -->
+    <div class="row">
+    <div class="col-7">
 <app-global-presence [globalData]="global">
 </app-global-presence>
+</div>
+<div class="col-5">
     <div class="contactus">
-        <!-- <div class="formdetail">
-            <div class="address">
-
-                <h4>{{global.global}}</h4>
-
-                <div class="place">
-                    <h6>{{global.hq}}</h6>
-                    <p class="add-city">{{global.address1}}</p>
-                    <a href="tel:+91 99138 08285" class="contact mobile-no"><i
-                            class="bi bi-telephone-fill"></i>&nbsp;&nbsp; {{global. no1}}</a>
-                </div>
-
-                <div class="place">
-                    <h6>{{global.usa}}</h6>
-                    <p class="add-city">{{global.address2}}</p>
-                    <a href="tel: +1 (404) 483-3388" class="contact mobile-no"><i
-                            class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{global.no2}}</a>
-                </div>
-
-                <div class="place">
-                    <h6>{{global.uk}}</h6>
-                    <p class="add-city">{{global.address3}}</p>
-                    <a href="tel:+44 78240 75400" class="contact mobile-no"><i
-                            class="bi bi-telephone-fill"></i>&nbsp;&nbsp;{{global.no3}}</a>
-                </div>
-
-                <div class="place">
-                    <a href="mailto:solutions@taglineinfotech.com" class="mail"><i
-                            class="bi bi-envelope-fill"></i>{{global.email}}</a>
-                </div>
-
-            </div>
-        </div> -->
+        
 
         <app-form [formData]="globalform"></app-form>
-        <!-- <div class="forms">
-            <h1>{{globalform. getquote}}</h1>
-            <input type="text" placeholder="Full Name"><br>
-            <input type="text" placeholder="Phone"><br>
-            <input type="email" placeholder="Email"><br>
-            <textarea placeholder="Message" rows="3"></textarea><br>
-            <button>Send Message</button>
-        </div> -->
+       
+
     </div>
+</div>
+</div>
+         
 
     <!-- ____________________________________________________________________ -->
 

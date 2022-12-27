@@ -346,20 +346,7 @@ export class AppComponent {
   ]
     
   
-  // experiencesub:Experiencesub = {
-  //   contentlogo1: '../assets/../assets/images/contentlogo.webp',
-  //   contentlogo2: '../assets/../assets/images/contentlogo2.webp',
-  //   contentlogo3: '../assets/../assets/images/contentlogo3.webp',
-  //   contentlogo4: '../assets/../assets/images/contentlogo4.webp',
-  //   plusexp1: '125+',
-  //   plusexp2: '450+',
-  //   plusexp3: '150+',
-  //   plusexp4: '5+',
-  //   plusexptag1: 'Professional',
-  //   plusexptag2: 'Completed Projects',
-  //   plusexptag3: 'Freelance Hours',
-  //   plusexptag4: 'Years of experience',
-  // }
+ 
   technologies:Technologies = {
     technologies: 'Our Technologies',
     web: 'Web',

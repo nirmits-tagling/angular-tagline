@@ -17,8 +17,10 @@ import { Whytagline } from '../common';
 })
 export class ChooseTaglineComponent implements OnInit {
 
+
   @Input()
   chooseTagline:Whytagline[]=[];
+choose: any;
 
   constructor() { }
 

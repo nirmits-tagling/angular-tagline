@@ -2,7 +2,7 @@
 <div class="revbox" *ngFor="let boxes of ratingboxdata">
     <div class="rating">
         <h3>{{ boxes.rating}}</h3>
-        <ngb-rating [max]="5" [(rate)]="boxes.rating" [readonly]="false"></ngb-rating>
+        <ngb-rating [max]="3" [(rate)]="boxes.rating" [readonly]="true"></ngb-rating>
     
     </div>
 
