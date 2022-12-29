@@ -1,14 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { DataService } from '../allServices/data.service';
+import { Services } from '../common';
 
-interface Services{
-  button?: string,
-  description?: string,
-  tag?: string,
-  img?: string,
-  chooseustag ?:string,
-  dropline ?:string,
-  contactbtn ?:string
-  }
+// interface Services{
+//   button?: string,
+//   description?: string,
+//   tag?: string,
+//   img?: string,
+//   chooseustag ?:string,
+//   dropline ?:string,
+//   contactbtn ?:string
+//   }
 
 @Component({
   selector: 'app-service',
@@ -17,11 +19,12 @@ interface Services{
 })
 export class ServiceComponent implements OnInit {
   @Input()
- serviceData!: Services[];
+ serviceData: Services[]=[];
 
-  constructor() { }
+  constructor(private dataService:DataService) { }
 
   ngOnInit(): void {
+    this.serviceData = this.dataService.services;
   }
 
 }

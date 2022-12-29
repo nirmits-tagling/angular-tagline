@@ -1,17 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-interface Technologies{
-  technologies:string,
-  web:string,
-  mobile:string,
-  desktop:string,
-plateform:string,
-database:string,
-bigData:string
-machineLearning:string,
-devOps:string,
-clouds:string,
+import { TechnologiesService } from '../allServices/technologies.service';
+import { Technologies } from '../common';
 
-}
 
 @Component({
   selector: 'app-technologies',
@@ -19,13 +9,14 @@ clouds:string,
   styleUrls: ['./technologies.component.scss']
 })
 export class TechnologiesComponent implements OnInit {
-  @Input()
-  technologiesdata!: Technologies;
+  // @Input()
+  technologiesdata: string[]=[];
 
   
-  constructor() { }
+  constructor(private technologiesService:TechnologiesService) { }
 
   ngOnInit(): void {
+    this.technologiesdata = this.technologiesService.technologies;
    
   }
 

@@ -1,11 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ExperienceSubService } from '../allServices/experience-sub.service';
+import { Experiencesub } from '../common';
 
-// interface Experience{
-//   experiencetag:string,
-//   experiencedescription:string,
-//   contactbtn:string,
-//   imgtag:string
-// }
 
 @Component({
   selector: 'app-experience-info',
@@ -14,11 +10,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ExperienceInfoComponent implements OnInit {
 
-  @Input()experienceInfoData:any;
+  // @Input()
+  experienceInfoData:Experiencesub[]=[];
 
-  constructor() { }
+  constructor(private experienceSubService:ExperienceSubService) { }
 
   ngOnInit(): void {
+    this.experienceInfoData = this.experienceSubService.experincesubs;
   }
 
 }

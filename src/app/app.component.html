@@ -12,13 +12,9 @@
 
   
 
-         < class="boxes" >
-            <!-- <div class="divcontent divcontent1" style="border: none;">
-                <h1 style="text-align: left; line-height: 70px;font-weight: 700;">{{services}}<br> <span
-                        style="font-weight: bolder; font-size: 60px;"></span> <br> </h1>
-            </div>     -->
-
-            <app-service [serviceData]="services"></app-service>
+       
+           
+            <app-service></app-service>
   
 
         
@@ -26,130 +22,38 @@
 
 
   
-    
-     <div class="experience">
-        <app-experience-section [experiencedata]="experience"></app-experience-section>
-
-        <!-- <div class="contentexp">
-            <h2>{{experience.experiencetag}}</h2>
-            <p>{{experience.experiencedescription}}</p>
-            <button [type]="experience.contactbtn">Contact Us</button>
-        </div> -->
-
-        <span>
-            <img src="{{experience.imgtag}}" height="490">
-        </span>
-
-        <app-experience-info [experienceInfoData]="experincesubs"></app-experience-info>
 
 
-        <!-- <div class="numberexp">
+        <app-experience-info></app-experience-info>
 
-            <div class="fulldiv1" class="fulldiv2">
-                <div class="div1" class="div3" *ngFor="let experincesub of experincesubs">
-                    <img src="{{experincesub.img}}">
-                    <h1>{{experincesub.tittle}}</h1>
-                    <h5>{{experincesub.description}}</h5>
-                </div>
-            
-        </div>
-    </div> -->
-    </div> 
+
+      
+  
          
 
     <!-- ____________________________________________________________________ -->
 
-    <h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;">{{technologies.technologies}}</h1>
+    <h1 style="text-align: center;margin: 40px;font-size: 2rem; margin-bottom: 0;"></h1>
     <span class="headerline"></span>
     <div class="row">
 
-        <!-- <app-technologies [technologiesdata]="technologies"></app-technologies> -->
-        <!-- <div class="menu">
-          
-            <ul>
-                <li class="active"><a href="">{{technologies.technologies}}</a></li>
-                <li><a href="">{{technologies.web}}</a></li>
-                <li><a href="">{{technologies.mobile}}</a></li>
-                <li><a href="">{{technologies.desktop}}</a></li>
-                <li><a href="">{{technologies.plateform}}</a></li>
-                <li><a href="">{{technologies.database}}</a></li>
-                <li><a href="">{{technologies.machineLearning}}</a></li>
-                <li><a href="">{{technologies.devOps}}</a></li>
-                <li><a href="">{{technologies.clouds}}</a></li>
-            </ul>
-        </div> -->
+      
         <div class="col-4">
-            <app-technologies [technologiesdata]="technologies"></app-technologies>
+            <app-technologies></app-technologies>
         </div>
         
         <div class="language col-6">
             <div class="web">
-                <h1>{{technologies.web}}</h1>
+                <!-- <h1>{{technologies.web}}</h1> -->
                 <h2 style="margin-top: 20px;font-weight: 400;">{{backend.backendtag}}</h2>
 
                 <app-backend-technologies  [backenddata]="backend"></app-backend-technologies>
-                <!-- <div class="backend">
-
-                    <div class="ror">
-                        <img src="{{backend.rubyimg}}">
-                        <h3>{{backend.rubytag}}</h3>
-                    </div>
-                    <div class="python">
-                        <img src="{{backend.pythonimg}}">
-                        <h3>{{backend.pythontag}}</h3>
-                    </div>
-                    <div class="node">
-                        <img src="{{backend.nodejsimg}}">
-                        <h3>{{backend.nodejstag}}</h3>
-                    </div>
-                    <div class="php">
-                        <img src="{{backend.phpimg}}">
-                        <h3>{{backend.phptag}}</h3>
-                    </div>
-                    <div class="java">
-                        <img src="{{backend.javaimg}}">
-                        <h3>{{backend.javatag}}</h3>
-                    </div>
-                    <div class="go">
-                        <img src="{{backend.golangimg}}">
-                        <h3>{{backend.golangtag}}</h3>
-                    </div>
-
-                </div> -->
+            
 
                 <h2>{{frontend.fronttag}}</h2>
 
                 <app-frontend-technologies [frontenddata]="frontend"></app-frontend-technologies>
-                <!-- <div class="frontend">
-                    <div class="react">
-                        <img src="{{frontend.reactimg}}">
-                        <h3>{{frontend.reacttag}}</h3>
-                    </div>
-                    <div class="angular">
-                        <img src="{{frontend.angularimg}}">
-                        <h3>{{frontend.angulartag}}</h3>
-                    </div>
-                    <div class="typescipt">
-                        <img src="{{frontend.typscriptimg}}">
-                        <h3>{{frontend.typescripttag}}</h3>
-                    </div>
-                    <div class="vue">
-                        <img src="{{frontend.vueimg}}">
-                        <h3>{{frontend.vuetag}}</h3>
-                    </div>
-                    <div class="mateor">
-                        <img src="{{frontend.mateorimg}}">
-                        <h3>{{frontend.mateortag}}</h3>
-                    </div>
-                    <div class="javascript">
-                        <img src="{{frontend.javascriptimg}}">
-                        <h3>{{frontend.javascripttag}}</h3>
-                    </div>
-                    <div class="html">
-                        <img src="{{frontend.htmlimg}}">
-                        <h3>{{frontend.htmltag}}</h3>
-                    </div>
-                </div> -->
+                
             </div>
         </div>
 
@@ -164,56 +68,7 @@
     <h1 class="taglinewhyhead">{{whytagline.whychoosetag}}</h1>
     <span class="headerline"></span>
     <p class="taglinewhyp">{{whytagline.whychoosedescription}}</p>
-    <div class="empowers">
-        <div class="empowerbox">
-            <div class="imgnumflex">
-                <img src="{{whytagline.progressiveimg}}">
-                <h1>{{whytagline.one}}</h1>
-            </div>
-            <h2>{{whytagline.progressive}}</h2>
-            <p>{{whytagline.progressivedescription}}</p>
-        </div>
-        <div class="empowerbox">
-            <div class="imgnumflex">
-                <img src="{{whytagline.efficientimg}}">
-                <h1>{{whytagline.two}}</h1>
-            </div>
-            <h2>{{whytagline.efficient}}</h2>
-            <p>{{whytagline.efficientdescription}}</p>
-        </div>
-        <div class="empowerbox">
-            <div class="imgnumflex">
-                <img src="{{whytagline.flexibleimg}}">
-                <h1>{{whytagline.three}}</h1>
-            </div>
-            <h2>{{whytagline.flexible}}</h2>
-            <p>{{whytagline.flexibledescription}}</p>
-        </div>
-        <div class="empowerbox">
-            <div class="imgnumflex">
-                <img src="{{whytagline.costeffectiveimg}}">
-                <h1>{{whytagline.four}}</h1>
-            </div>
-            <h2>{{whytagline.costeffective}}</h2>
-            <p>{{whytagline.costeffectivedescription}}</p>
-        </div>
-        <div class="empowerbox">
-            <div class="imgnumflex">
-                <img src="{{whytagline.consistentimg}}">
-                <h1>{{whytagline.five}}</h1>
-            </div>
-            <h2>{{whytagline.consistent}}</h2>
-            <p>{{whytagline.consistentdescription}}</p>
-        </div>
-        <div class="empowerbox lastempowerbox">
-            <h1>{{whytagline.empowertag}}<span></span> {{whytagline.your}} <span>{{whytagline.business}}</span>{{whytagline.dedicateddev}}</h1>
-            <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
-        </div>
-    </div> -->
-    <!-- <div class="empowerbox lastempowerbox">
-        <h1>{{whytagline.empowertag}}<span></span> {{whytagline.your}} <span>{{whytagline.business}}</span>{{whytagline.dedicateddev}}</h1>
-        <button [type]="whytagline.talkbtn">Talk to Our Expertise</button>
-    </div> -->
+  
     <!-- ____________________________________________________________________ -->
 
     <div class="reviews">
@@ -229,11 +84,8 @@
         
      <div class="awards"> 
         <div class="awardhead">
-            <app-award [awardData]="awards"></app-award>
-        <!-- <h1>{{awards.awards}} <br>{{awards.recognization}}</h1> --> -->
-     
-
-    <!-- </div> -->
+            <app-award ></app-award>
+      
      </div>
      </div>
     <!-- ____________________________________________________________________ -->

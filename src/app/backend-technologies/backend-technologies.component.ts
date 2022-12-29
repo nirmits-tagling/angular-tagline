@@ -1,21 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BackendService } from '../allServices/backend.service';
 import { Backend } from '../common';
 
-// interface Backend{
-//   backendtag:string,
-//   rubyimg:string,
-//   pythonimg:string,
-//   nodejsimg:string,
-//   phpimg:string,
-//   javaimg:string,
-//   golangimg:string,
-//   rubytag:string,
-//   pythontag:string,
-//   nodejstag:string,
-//   phptag:string,
-//   javatag:string,
-//   golangtag:string,
-// }
+
 
 @Component({
   selector: 'app-backend-technologies',
@@ -23,10 +10,10 @@ import { Backend } from '../common';
   styleUrls: ['./backend-technologies.component.scss']
 })
 export class BackendTechnologiesComponent implements OnInit {
-  @Input()
-  backenddata!: Backend;
+  // @Input()
+  backenddata: Backend[]=[];
 
-  constructor() { }
+  constructor(private backendService:BackendService) { }
 
   ngOnInit(): void {
   }

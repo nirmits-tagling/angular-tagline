@@ -70,12 +70,6 @@ interface Experience{
 //   plusexptag4:string,
 // }
 
-interface Experiencesub{
-  img:string,
-  tittle:string,
-  description:string
-
-}
 interface Technologies{
   technologies:string,
   web:string,
@@ -140,85 +134,7 @@ interface RatingBox{
   para:string,
   verfied:string
 }
-// interface Awards{ 
-//   awards:string,
-//   recognization:string,
-//   img1:string,
-//   img2:string,
-//   img3:string,
-//   img4:string,
-//   img5:string,
-// }
 
-// interface Blog {
-//   ourblog:string,
-//   python:string,
-//   pythondes:string,
-//   readmore:string,
-//   nodejs:string,
-//   nodejsdes:string,
-//   ror:string,
-//   rordes:string,
-  
-// }
-
-// interface Global{
-//   global:string,
-//   hq:string,
-//   address1:string,
-//   no1:string,
-//   usa:string, 
-//   address2:string,
-//   no2:string,
-//   uk:string,
-//   address3:string,
-//   no3:string,
-//   email:string,
-// }
-
-// interface Globalform{
-//   getquote:string,
-// }
-
-// interface Footer{
-//   latest:string,
-//   sharemail:string,
-//   guides:string,
-//   and:string
-//   industrynews:string,
-//   subscribe:string,
-//   unsubscribe:string,
-//   inquiry:string,
-//   email:string,
-//   no:string,
-//   saless:string,
-//   tagline:string,
-//   help:string,
-//   career:string,
-//   aboutus:string,
-//   contactus:string,
-//   blog:string,
-//   privacy:string,
-//   sitemap:string,
-//   service:string,
-//   mobile:string,
-//   webdev:string,
-//   webdesign:string,
-//   ui:string,
-//   digital:string,
-//   hire:string,
-//   hirepython:string,
-//   hireangular:string,
-//   hireror:string,
-//   hireflutter:string,
-//   hirereact:string,
-//   hirenative:string,
-//   follow:string,
-//   year:string,
-//   rightreserved:string,
-//   llp:string
-
-// }
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -226,18 +142,9 @@ interface RatingBox{
 })
 export class AppComponent {
   title = 'tagline-angular';
-  labelHeader = ["Case Study","About Us","Hire Developers","Technology","Industry"]
+   labelHeader = ["Case Study","About Us","Hire Developers","Technology","Industry"]
 
-  // labelHeader: LabelHeader = {
-  //   caseStudy: "case Study",
-  //   about: 'about Us',
-  //   hireDevelopers: 'hire developers',
-  //   technology: 'technology',
-  //   industry: 'industry',
-  //   taglinelogo: "../assets/../assets/images/tagline.png",
-  //   button: "button",
-  // }
-
+ 
 
   mainsection:MainSection = {
     softwaretag:"Software Development Company",
@@ -251,64 +158,6 @@ export class AppComponent {
     getquote:"Get Quote",
   }
 
-  services = [
-    // {
-    //     tag:'Our Services'
-    // },
-    {
-      tag:'Find the right offers.'
-    },
-    // ourservices: 'Our Services',
-    // find: 'Find the',
-    // rightoffer: 'right offers',
-    // foryou: 'for you.',
-    {
-    button: 'Learn More',
-    description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-    tag: 'Application Management and Modernisation',
-    img:'../assets/../assets/images/mobile.png',
-    },
-
-
-   {
-    img: '../assets/../assets/images/web-design-icon.webp',
-    tag: 'Software Product Engineering',
-    description: 'We are dedicated to providing the best Software product engineering services for your business. Our team of developers provides the service of software product engineering and it includes designing, developing, testing, and deploying the software products.',
-    button: 'Learn More',
-   
-  },
-
- {
-    img: '../assets/../assets/images/testing-icon.webp',
-    tag: 'Agile QA, Automation, and DevOps',
-    description: 'At Tagline Infotech, we have a team of dedicated developers that provide the services like Agile QA, Automation, and DevOps. Our DevOps engineers constantly do the testing of software while Agile QA ensures the quality of the software.',
-    button: 'Learn More',
-    
-  },
-
- {
-    img: '../assets/../assets/images/uiux-design-icon.webp',
-    tag: 'Digital Strategy & Design',
-    description: 'Tagline Infotech helps clients to create a clear digital strategy and design for the growth of their businesses. Our developers and UI UX designers put the user first to create easy-to-navigate interfaces and smooth end-to-end experiences.',
-    button: 'Learn More',
-    
-  },
-
-  {
-    img: '../assets/../assets/images/software-development-1.png',
-    tag: 'Software outsourcing company',
-    description: 'Tagline Infotech is an experienced software outsourcing company that provides services for various businesses. We have a reliable team of developers that provides high-quality outsourcing services to scale your business.',
-    button: 'Learn More',
-   
-  },
- {
-    tag : 'Dont know what to choose? ',
-    description :"Drop us a line.",
-    button : 'Contact Us'
-  }
- ];
-
-
   
 
   experience:Experience = {
@@ -318,63 +167,27 @@ export class AppComponent {
     imgtag:'../assets/../assets/images/woman.webp'
   }
 
-  experincesubs:Experiencesub []= [
-    {
-      img:'../assets/../assets/images/contentlogo.webp',
-  tittle:'125+',
-  description:'Professional'
-
-    },
-    {
-      img:'../assets/../assets/images/contentlogo2.webp',
-  tittle:'450+',
-  description:'Completed Projects'
-
-    },
-    {
-      img:'../assets/../assets/images/contentlogo3.webp',
-  tittle:'150+',
-  description:'Freelance Hours'
-
-    },
-    {
-      img:'../assets/../assets/images/contentlogo4.webp',
-  tittle:'5+',
-  description:'Years of experience'
-
-    }
-  ]
+ 
     
   
  
-  technologies:Technologies = {
-    technologies: 'Our Technologies',
-    web: 'Web',
-    mobile: 'Mobile',
-    desktop: 'Desktop',
-    plateform: 'Plateform',
-    database: 'Database',
-    bigData: 'BigData',
-    machineLearning: 'MachineLearning',
-    devOps: 'DevOps',
-    clouds: 'Clouds'
-  }
+  
 
-  backend:Backend = {
-    backendtag: 'Backend',
-    rubyimg: '../assets/images/ror.png',
-    pythonimg: '../assets/images/python.png',
-    nodejsimg: '../assets/images/node_js.png',
-    phpimg: '../assets/images/php.png',
-    javaimg: '../assets/images/android-java.png',
-    golangimg: '../assets/images/go.png',
-    rubytag: 'Ruby On Rails',
-    pythontag: 'Python',
-    nodejstag: 'Node_JS',
-    phptag: 'Php',
-    javatag: 'Java',
-    golangtag: 'Go Lang'
-  }
+  // backend:Backend = {
+  //   backendtag: 'Backend',
+  //   rubyimg: '../assets/images/ror.png',
+  //   pythonimg: '../assets/images/python.png',
+  //   nodejsimg: '../assets/images/node_js.png',
+  //   phpimg: '../assets/images/php.png',
+  //   javaimg: '../assets/images/android-java.png',
+  //   golangimg: '../assets/images/go.png',
+  //   rubytag: 'Ruby On Rails',
+  //   pythontag: 'Python',
+  //   nodejstag: 'Node_JS',
+  //   phptag: 'Php',
+  //   javatag: 'Java',
+  //   golangtag: 'Go Lang'
+  // }
   
   frontend:Frontend = {
     fronttag: 'Front',
@@ -479,16 +292,16 @@ verfied: 'Verified Review'
 
 ];
 
-  awards = [
+  // awards = [
     
-    // awards: 'Awards &',
-    // recognization: 'Recognitions',
-     '../assets/images/award-2.webp',
-    '../assets/images/award-3.webp',
-    '../assets/images/award-4.webp',
-    '../assets/images/award-5.webp',
-    '../assets/images/award-6.webp'
-  ]
+  //   // awards: 'Awards &',
+  //   // recognization: 'Recognitions',
+  //    '../assets/images/award-2.webp',
+  //   '../assets/images/award-3.webp',
+  //   '../assets/images/award-4.webp',
+  //   '../assets/images/award-5.webp',
+  //   '../assets/images/award-6.webp'
+  // ]
   
   blogs = [{
 

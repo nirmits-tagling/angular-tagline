@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AwardService } from '../allServices/award.service';
 
 @Component({
   selector: 'app-award',
@@ -7,12 +8,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AwardComponent implements OnInit {
 
-  @Input() awardData:string[]=[];
+  // @Input() 
+  awardData:string[]=[];
 
   
-  constructor() { }
+  constructor(private awardService:AwardService) { }
 
   ngOnInit(): void {
+    this.awardData = this.awardService.awards;
   }
 
 }
