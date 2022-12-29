@@ -3,7 +3,7 @@
     <span class="headerline"></span>
     <div class="bloggers">
         <div class="blog" *ngFor="let blog of blogData">
-            <img src={{blog.img}}>
+            <img [src]="blog.img">
             <div style="display: flex;justify-content: space-between;">
                 <button>{{blog.button}}</button>
                 <p>15/12/22</p>

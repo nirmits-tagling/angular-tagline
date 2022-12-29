@@ -45,14 +45,14 @@
         <div class="language col-6">
             <div class="web">
                 <!-- <h1>{{technologies.web}}</h1> -->
-                <h2 style="margin-top: 20px;font-weight: 400;">{{backend.backendtag}}</h2>
+                <h2 style="margin-top: 20px;font-weight: 400;"></h2>
 
-                <app-backend-technologies  [backenddata]="backend"></app-backend-technologies>
+                <app-backend-technologies></app-backend-technologies>
             
 
-                <h2>{{frontend.fronttag}}</h2>
+                <!-- <h2>{{frontend.fronttag}}</h2> -->
 
-                <app-frontend-technologies [frontenddata]="frontend"></app-frontend-technologies>
+                <app-frontend-technologies ></app-frontend-technologies>
                 
             </div>
         </div>
@@ -69,7 +69,7 @@
     <span class="headerline"></span>
     <p class="taglinewhyp">{{whytagline.whychoosedescription}}</p>
   
-    <!-- ____________________________________________________________________ -->
+     ____________________________________________________________________ -->
 
     <div class="reviews">
         <app-clientele [cilentData]="clientele"></app-clientele>
@@ -90,21 +90,20 @@
      </div>
     <!-- ____________________________________________________________________ -->
 
-    <!-- <div class="blogs"> -->
-        <app-blog [blogData]="blogs"></app-blog>
+
+        <app-blog ></app-blog>
       
 
     <!-- ____________________________________________________________________ -->
     <div class="row">
     <div class="col-7">
-<app-global-presence [globalData]="global">
-</app-global-presence>
+<app-global-presence ></app-global-presence>
 </div>
 <div class="col-5">
     <div class="contactus">
         
 
-        <app-form [formData]="globalform"></app-form>
+        <app-form ></app-form>
        
 
     </div>

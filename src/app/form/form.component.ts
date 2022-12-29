@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FormService } from '../allServices/form.service';
 
 interface Globalform{
   getquote:string,
@@ -11,12 +12,14 @@ interface Globalform{
 })
 export class FormComponent implements OnInit {
 
-  @Input()
-  formData!: Globalform;
+  // @Input()
+  formData:string = 'Get Your Free Quote Today';
 
-  constructor() { }
+  constructor(private formService:FormService) { }
 
   ngOnInit(): void {
+    this.formData = this.formService.globalform;
   }
+  
 
 }

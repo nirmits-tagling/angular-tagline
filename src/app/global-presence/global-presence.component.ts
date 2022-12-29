@@ -1,18 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-
-interface Global{
-  global:string,
-  hq:string,
-  address1:string,
-  no1:string,
-  usa:string, 
-  address2:string,
-  no2:string,
-  uk:string,
-  address3:string,
-  no3:string,
-  email:string,
-}
+import { GlobalPresenceService } from '../allServices/global-presence.service';
+import { Globals } from '../common';
 
 
 @Component({
@@ -22,12 +10,13 @@ interface Global{
 })
 export class GlobalPresenceComponent implements OnInit {
 
-  @Input()
-  globalData!: Global;
+  // @Input()
+  globalData:Globals []=[];
 
-  constructor() { }
+  constructor(private globalPresenceService:GlobalPresenceService) { }
 
   ngOnInit(): void {
+    this.globalData = this.globalPresenceService.global;
   }
 
 }

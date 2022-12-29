@@ -1,22 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { FrontendService } from '../allServices/frontend.service';
+import { Frontend } from '../common';
 
-interface Frontend{
-  fronttag:string,
-  reactimg:string,
-  angularimg:string,
-  typscriptimg:string,
-  vueimg:string,
-  mateorimg:string,
-  javascriptimg:string,
-  htmlimg:string,
-  reacttag:string,
-  angulartag:string,
-  typescripttag:string,
-  vuetag:string,
-  mateortag:string,
-  javascripttag:string,
-  htmltag:string,
-}
 
 @Component({
   selector: 'app-frontend-technologies',
@@ -25,12 +10,13 @@ interface Frontend{
 })
 export class FrontendTechnologiesComponent implements OnInit {
 
-  @Input()
-  frontenddata!: Frontend;
+  // @Input()
+  frontenddata: Frontend[]=[];
 
-  constructor() { }
+  constructor(private frontendService:FrontendService) { }
 
   ngOnInit(): void {
+    this.frontenddata = this.frontendService.frontend;
   }
 
 }

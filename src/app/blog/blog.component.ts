@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BlogService } from '../allServices/blog.service';
 import { Blog } from '../common';
 
 // interface Blog {
@@ -19,11 +20,13 @@ import { Blog } from '../common';
 })
 export class BlogComponent implements OnInit {
 
-  @Input() blogData:Blog[]=[];
+  // @Input()
+   blogData:Blog[]=[];
 
-  constructor() { }
+  constructor(private blogService:BlogService) { }
 
   ngOnInit(): void {
+    this.blogData = this.blogService.blogs;
   }
 
 }

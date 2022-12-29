@@ -100,23 +100,6 @@ interface Backend{
   golangtag:string,
 }
 
-interface Frontend{
-  fronttag:string,
-  reactimg:string,
-  angularimg:string,
-  typscriptimg:string,
-  vueimg:string,
-  mateorimg:string,
-  javascriptimg:string,
-  htmlimg:string,
-  reacttag:string,
-  angulartag:string,
-  typescripttag:string,
-  vuetag:string,
-  mateortag:string,
-  javascripttag:string,
-  htmltag:string,
-}
 
 
 
@@ -173,39 +156,6 @@ export class AppComponent {
  
   
 
-  // backend:Backend = {
-  //   backendtag: 'Backend',
-  //   rubyimg: '../assets/images/ror.png',
-  //   pythonimg: '../assets/images/python.png',
-  //   nodejsimg: '../assets/images/node_js.png',
-  //   phpimg: '../assets/images/php.png',
-  //   javaimg: '../assets/images/android-java.png',
-  //   golangimg: '../assets/images/go.png',
-  //   rubytag: 'Ruby On Rails',
-  //   pythontag: 'Python',
-  //   nodejstag: 'Node_JS',
-  //   phptag: 'Php',
-  //   javatag: 'Java',
-  //   golangtag: 'Go Lang'
-  // }
-  
-  frontend:Frontend = {
-    fronttag: 'Front',
-    reactimg: '../assets/images/react-js.png',
-    angularimg: '../assets/images/angular-icon.png',
-    typscriptimg: '../assets/images/typescript-icon.png',
-    vueimg: '../assets/images/vue-js.png',
-    mateorimg: '../assets/images/meter-js.png',
-    javascriptimg: '../assets/images/javascript-icon.png',
-    htmlimg: '../assets/images/html5.png',
-    reacttag: 'React_JS',
-    angulartag: 'Angular',
-    typescripttag: 'Typescript',
-    vuetag: 'Vue_JS',
-    mateortag: 'Mateor_Js',
-    javascripttag: 'Javascript',
-    htmltag: 'HTML5'
-  }
 
    whytagline = [
 //{     tag: 'Why Choose Tagline Infotech ?',
@@ -303,47 +253,8 @@ verfied: 'Verified Review'
   //   '../assets/images/award-6.webp'
   // ]
   
-  blogs = [{
 
-    title: 'Python vs Java Comparison Of',
-    description: 'Quick Summary The most difficult decision for an entrepreneur is deciding on a programming...',
-    readmore: 'Read More ->',
-    img:'../assets/images/Python-vs-Java.png',
-    button:'Python'
-  },
-   {
- 
-   title: 'Node Js',
-   description: 'Best Practices for Node.js Application Development:...',
-    readmore: 'Read More ->',
-    img:'../assets/images/Node.js-Application.png',
-    button:'NodeJs'
-   },{
-  
-    title: 'JavaScript vs Ruby On Rails: What...',
-    description: 'Quick Summary: Ruby on Rails and JavaScript both languages are both widely popular among',
-    readmore: 'Read More ->',
-    img:'../assets/images/Kotlin-vs-Java.png',
-    button:'RoR'
-}]
 
-  global = {
-    global: 'Our Global Presence',
-    hq: 'India (HQ)',
-    address1: 'Digital Valley, 423, Apple Square, beside Lajamni Chowk, Mota Varachha, Surat, Gujarat 394101',
-    no1: '+91 9874662135',
-    usa: 'USA',
-    address2: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
-    no2: '+91 9874662135',
-    uk: 'United KIngdom',
-    address3: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052',
-    no3: '+91 9874662135',
-    email: '2885 Old Zion, Cemetery Rd, Loganville, Ga 30052'
-  }
-
-  globalform = {
-    getquote: 'Get Your Free Quote Today'
-  }
 
   footer = {
     latest: 'Get latest from Tagline Infotech',

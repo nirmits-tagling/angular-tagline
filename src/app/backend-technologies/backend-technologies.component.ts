@@ -16,6 +16,7 @@ export class BackendTechnologiesComponent implements OnInit {
   constructor(private backendService:BackendService) { }
 
   ngOnInit(): void {
+    this.backenddata = this.backendService.backend;
   }
 
 }

@@ -1,18 +1,3 @@
-export interface Backend{
-  backendtag:string,
-  rubyimg:string,
-  pythonimg:string,
-  nodejsimg:string,
-  phpimg:string,
-  javaimg:string,
-  golangimg:string,
-  rubytag:string,
-  pythontag:string,
-  nodejstag:string,
-  phptag:string,
-  javatag:string,
-  golangtag:string,
-}
 
 export interface Blog {
 
@@ -97,4 +82,29 @@ export interface Experiencesub{
   tittle:string,
   description:string
 
+
+}
+
+export interface Backend{
+  img:string,
+  tag:string
+
+
+}
+
+
+export interface Frontend{
+  tag:string,
+  img:string,
+  
+}
+
+
+export interface Globals{
+  // global:string,
+  // hq:string,
+  address:string,
+  no:string,
+  country:string,
+  // email:string,
 }
